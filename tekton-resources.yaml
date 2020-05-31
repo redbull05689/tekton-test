@@ -1,0 +1,21 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+ name: git-repo
+spec:
+ type: git
+ params:
+   - name: revision
+     value: master
+   - name: url
+     value: https://github.com/redbull05689/tekton-demo.git
+---
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+ name: image-registry
+spec:
+ type: image
+ params:
+   - name: url
+     value: registry.hub.docker.com/repository/docker/redbull05689/tekton-demo
