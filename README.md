@@ -20,7 +20,7 @@ kaniko context - это папка внутри пода Каникол , в к�
 --docker-server=hub.docker.com
 
 kubectl create secret docker-registry tekton-demo  \
-        --docker-username=redbull05689 --docker-password=dBQLrjBAU7UQcu6A \
+        --docker-username=redbull05689 --docker-password=d***** \
         --docker-email=redbull05689@gmail.com
 
 ### install dashboard
